@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Oxygen";
+  src: url('../fonts/Oxygen-Regular.ttf');
+}
+
+body{
+  font-family: "Oxygen", sans-serif;
+  overflow-x:hidden;
+}
+
+.border-red{
+  border: 2px solid red;
+}
+.banner{
+  height: 600px;
+  width: 100%;
+  font-weight: bold;
+  background: url('../images/temple.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.element{
+  position: relative;
+  top:40%;
+  text-align:center;
+  -webkit-tranform: translate(-50%);
+  -moz-tranform: translate(-50%);
+  -ms-tranform: translate(-50%);
+  -o-tranform: translateY(-50%);
+  tranform: translateY(-50%);
+  font-size: 450%;
+  color: #fff;
+  white-space: pre;
+}
+.jumbotron{
+  font-size: 200%;
+  text-align: center;
+}
+
+
+/*** Blinking cursor used by typed.js ***/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*** End of blinking cursor ***/
+/** navbar **/
+a{
+  color: rgba(31, 166, 122,0.8);
+  text-decoration: none;
+}
+a:hover, a:focus{
+  text-decoration: none;
+  color: #1b926c;
+}
+header{
+  position: absolute;
+  top:5%;
+  right: 5%;
+}
+
+nav ul li{
+  display: inline-block;
+}
+nav{
+  float: right;
+}
+nav ul li a{
+  font-size: 120%;
+  padding-right:15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.row{
+  margin-bottom: 50px;
+}
+.title{
+  text-align: center;
+  margin-bottom:40px;
+}
+.description{
+  font-size: 110%;
+  font-weight: normal;
+}
+#first::first-letter{
+  color: #1fa67a;
+  font-size:200%;
+  font-weight: bold;
+}
+
+.title h2{
+  color: #1fa67a;
+  position: relative;
+}
+
+/** Gallery section **/
+.gallery-item{
+  position: relative;
+  margin-bottom: 20px;
+}
+.gallery-item img{
+  width: 100%;
+}
+.overlay{
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  font-size:150%;
+  font-weight: bold;
+  text-align:center;
+  text-transform: uppercase;
+  line-height: 0px;
+  transition: all 0.3s 0.1s;
+}
+.gallery-item:hover .overlay{
+  visibility: visible;
+  line-height: 240px;
+}
+
+/** End of gallery section **/
+/* custom media queries */
+@media (min-width: 992px){
+  .title h2:before{
+    font-family:'Glyphicons Halflings';
+    content:'\e234';
+    position: absolute;
+    right: 60%;
+    top:10%;
+  }
+  .title h2:after{
+    font-family:'Glyphicons Halflings';
+    content:'\e234';
+    position: absolute;
+    right: 37%;
+    top:10%;
+  }
+}
