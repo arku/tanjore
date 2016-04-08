@@ -8,8 +8,8 @@ body{
   overflow-x:hidden;
 }
 
-.border-red{
-  border: 2px solid red;
+.space{
+  padding: 30px;
 }
 .banner{
   height: 600px;
@@ -64,7 +64,7 @@ body{
 /*** End of blinking cursor ***/
 /** navbar **/
 a{
-  color: rgba(31, 166, 122,0.8);
+  color: #fff;
   text-decoration: none;
 }
 a:hover, a:focus{
@@ -88,6 +88,10 @@ nav ul li a{
   padding-right:15px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  transition: all 0.4s;
+}
+nav ul li a:hover{
+  color:rgba(31, 166, 122,0.8);
 }
 
 .row{
@@ -115,10 +119,11 @@ nav ul li a{
 /** Gallery section **/
 .gallery-item{
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .gallery-item img{
   width: 100%;
+  height: 270px;
 }
 .overlay{
   position: absolute;
@@ -127,7 +132,7 @@ nav ul li a{
   height: 100%;
   top:0;
   left:0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.8);
   color: #fff;
   font-size:150%;
   font-weight: bold;

@@ -15,31 +15,31 @@ $(document).ready(function(){
 
   var images = [
     {
-      src: "temple-snap.jpg",
+      src: "images/temple-snap.jpg",
       alt: "Brihadeeswarar Temple"
     },
     {
-      src: "maratha.jpg",
+      src: "images/maratha.jpg",
       alt: "Maratha Palace"
     },
     {
-      src: "royal_palace_museum.jpg",
+      src: "images/royal_palace_museum.jpg",
       alt: "Royal Palace Museum"
     },
     {
-      src: "thanjavur_palace.jpg",
+      src: "images/thanjavur_palace.jpg",
       alt: "Thanjavur Palace"
     },
     {
-      src: "nandi.jpg",
+      src: "images/nandi.jpg",
       alt: "Nandi statue"
     },
     {
-      src: "bell_tower.jpg",
+      src: "images/bell_tower.jpg",
       alt: "Bell Tower"
     },
     {
-      src: "tamil_university.jpg",
+      src: "images/tamil_university.jpg",
       alt: "Tamil University"
     }
   ];
@@ -48,14 +48,22 @@ $(document).ready(function(){
   var buildGallery = function(){
     var galleryItemHTML = '<div class="col-sm-4"><div class="gallery-item"><div></div>';
     var imageHTML = '<img src="%data%" alt="%alt">';
-    var galleryOverlayHTML = '<div class="overlay">%data%</div>'
+    var galleryOverlayHTML = '<div class="overlay">%data%</div>';
+    var HTMLImage, overlayHTML;
 
-    for index in images{
+    for(index in images){
       item = images[index];
-      $("#gallery").append(galleryItemHTML);
+      $("#gallery .row").append(galleryItemHTML);
 
-      var HTMLImage = imageHTML.replace("%data%", item.src);
-      var HTMLImage = 
+      HTMLImage = imageHTML.replace("%data%", item.src);
+      HTMLImage = HTMLImage.replace("%alt%", item.alt);
+      overlayHTML = galleryOverlayHTML.replace("%data%", item.alt);
+
+      itemHTML = HTMLImage + overlayHTML;
+
+      //Appending a single gallery item
+      $(".gallery-item:last").append(itemHTML);
+
     } //end of for-in loop
   }// end of function
 
