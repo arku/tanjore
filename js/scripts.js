@@ -41,12 +41,21 @@ $(document).ready(function(){
     {
       src: "images/tamil_university.jpg",
       alt: "Tamil University"
+    },
+    {
+      src: "images/cholapuram.jpg",
+      alt: "Gangaikonda Cholapuram"
+    },
+    {
+      src: "images/library.jpg",
+      alt: "Saraswathi Mahal Library"
     }
+
   ];
 
   // Function to build the gallery
   var buildGallery = function(){
-    var galleryItemHTML = '<div class="col-sm-4"><div class="gallery-item"><div></div>';
+    var galleryItemHTML = '<div class="col-xs-6 col-sm-4"><div class="gallery-item"><div></div>';
     var imageHTML = '<img src="%data%" alt="%alt">';
     var galleryOverlayHTML = '<div class="overlay">%data%</div>';
     var HTMLImage, overlayHTML;
