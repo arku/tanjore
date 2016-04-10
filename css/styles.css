@@ -130,7 +130,17 @@ nav ul li a:hover{
 .panel-default>.panel-heading+.panel-collapse>.panel-body{
   border-top-color: transparent;
 }
+
+.glyphicon-chevron-right-rotate{
+  transform: rotate(90deg);
+}
+.red-background{
+  background: red;
+  color: red;
+}
 /** End of history section **/
+
+
 /** Gallery section **/
 .gallery-item{
   position: relative;

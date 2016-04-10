@@ -135,4 +135,31 @@ var buildHistory = function(history){
 }//End of function buildHistory()
 
 buildHistory(history);
+
+
+//accordion
+  /*$("#accordion").on('shown.bs.collapse', function(event){
+    var id = event.target.id;
+    var target = event.target.id + " " + "span.glyphicon.glyphicon-chevron-right";
+    console.log(target);
+    selector = "div.panel-heading ~ " + id;
+    console.log(selector);
+
+    $("span.glyphicon.glyphicon-chevron-right").addClass("glyphicon-chevron-right-rotate");
+    console.log("rotated");
+  });
+
+  $("#accordion").on('hidden.bs.collapse', function(event){
+    var id = event.target.id;
+    var target = event.target.id + " " + "span.glyphicon.glyphicon-chevron-right";
+    console.log(target);
+    selector = "div.panel-heading ~ " + id;
+    console.log(selector);
+
+    $(selector).addClass("red-background");
+    console.log("back to normal");
+  });*/
+
+
+
 });
