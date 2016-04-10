@@ -6,6 +6,7 @@
 body{
   font-family: "Oxygen", sans-serif;
   overflow-x:hidden;
+  font-size: 16px;
 }
 
 .space{
@@ -33,7 +34,6 @@ body{
   white-space: pre;
 }
 .jumbotron{
-  font-size: 200%;
   text-align: center;
 }
 
@@ -84,7 +84,6 @@ nav{
   float: right;
 }
 nav ul li a{
-  font-size: 120%;
   padding-right:15px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -102,7 +101,6 @@ nav ul li a:hover{
   margin-bottom:40px;
 }
 .description{
-  font-size: 110%;
   font-weight: normal;
 }
 #first::first-letter{
@@ -115,7 +113,24 @@ nav ul li a:hover{
   color: #1fa67a;
   position: relative;
 }
-
+/** History section **/
+.panel-default{
+  border: none;
+}
+.panel-default>.panel-heading{
+  border:none;
+  background: transparent;
+}
+.panel-title{
+  background:transparent;
+  border: transparent;
+  font-size: 24px;
+  color: #1fa67a;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body{
+  border-top-color: transparent;
+}
+/** End of history section **/
 /** Gallery section **/
 .gallery-item{
   position: relative;
@@ -165,7 +180,7 @@ nav ul li a:hover{
   font-size: 150%;
 }
 #trip-btn:before{
-  font-family: '';
+  font-family: 'Glyphicons Halflings';
   content: '\26fa';
   font-size: 24px;
 }
