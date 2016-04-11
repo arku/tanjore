@@ -160,6 +160,8 @@ buildHistory(history);
     console.log("back to normal");
   });*/
 
-
+$('.carousel').carousel({
+  interval:1500
+})
 
 });

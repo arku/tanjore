@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Oxygen';
+  src:url('../fonts/Oxygen-Regular.ttf');
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  overflow-x:hidden;
+}
+
+/** Navbar styles **/
+.navbar.navbar-default{
+  background: #00796B;
+  border-radius:0px;
+}
+.navbar.navbar-default a{
+  color: #fff;
+}
+#navbar ul li a{
+  color: #fff;
+}
+
+.carousel{
+  margin-bottom:10px;
+}
+.carousel-caption{
+  left:0%;
+}
+.item{
+  height: 550px;
+}
+.item img{
+  width: 100%;
+  max-width:100%;
+}
+
+#aambal-history{
+  margin-top:15px;
+}
+.content{
+  border-top:2px solid #00796B;
+  padding: 15px;
+}
