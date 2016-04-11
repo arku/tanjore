@@ -4,9 +4,10 @@
 }
 
 body{
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Oxygen', sans-serif;
   overflow-x:hidden;
+  padding-top:70px;
 }
 
 /** Navbar styles **/
@@ -19,6 +20,9 @@ body{
 }
 #navbar ul li a{
   color: #fff;
+}
+.navbar-default .navbar-collapse{
+  border:none;
 }
 
 .carousel{
@@ -41,4 +45,61 @@ body{
 .content{
   border-top:2px solid #00796B;
   padding: 15px;
+}
+.panel{
+  margin-top: 10px;
+  /*box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);*/
+  border:none;
+}
+.panel-default > .panel-heading{
+  background: blue;
+  color: #fff;
+}
+.panel > .panel-body{
+  position: relative;
+}
+#first-panel{
+  background: #4CAF50
+}
+#second-panel{
+  background: #FFC107;
+}
+#third-panel{
+  background: #2196F3;
+}
+.inner{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  right:0;
+  border-top:10px solid rgba(255,255,0,0.9);
+  border-right: 10px solid #fff;
+  border-bottom:10px solid #fff;
+  border-left:10px solid rgba(255,255,0,0.5);
+  bottom:0;
+  padding:0;
+}
+
+.panels{
+  background: transparent;
+}
+
+.panel-default{
+  border:none;
+}
+
+.panel-body{
+  background: rgba(255,255,0,0.5);
+}
+
+.dl-horizontal dt{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.dl-horizontal dd{
+  margin-left: 0px;
+}
+#about, #history, #about{
+  padding-top: 50px;
 }
