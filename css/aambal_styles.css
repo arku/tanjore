@@ -103,3 +103,6 @@ body{
 #about, #history, #about{
   padding-top: 50px;
 }
+h4{
+  font-weight: bold;
+}
